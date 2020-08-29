@@ -1,0 +1,39 @@
+
+    .rainbow-button1 {
+    text-decoration: none;
+      color: #fff;
+    font-family: Helvetica, Sans-serif;
+      width: calc(12vw + 5px);
+      height: calc(3vw + 5px);
+      background-image: linear-gradient(
+        90deg,
+        #00c0ff 0%,
+        #ffcf00 49%,
+        #fc4f4f 80%,
+        #00c0ff 100%
+        );
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      font-size: 2vw;
+      font-weight: bold;
+    }
+    .rainbow-button1:after {
+      content: attr(alt);
+      width: 12vw;
+      height: 3vw;
+      background-color: #191919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .rainbow-button1:hover {
+      animation: slidebg 0.8s linear infinite;
+    }
+    @keyframes slidebg {
+      to {
+        background-position: 12vw;
+      }
+    }   
